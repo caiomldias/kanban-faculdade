@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.task-card:active {
+  cursor: grabbing;
+}
+
+.drag-over {
+  outline: 3px solid rgba(239, 23, 97, 0.28);
+  outline-offset: -3px;
+}
