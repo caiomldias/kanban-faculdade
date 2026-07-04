@@ -71,12 +71,7 @@
         </article>
       </section>
 
-      <nav class="mb-5 flex flex-wrap gap-2 border-b border-slate-300" aria-label="Abas do projeto">
-        <button class="tab-button border-b-4 border-fiap px-4 py-3 text-sm font-black uppercase text-fiap" type="button" data-tab="kanban">Quadro Kanban</button>
-        <button class="tab-button border-b-4 border-transparent px-4 py-3 text-sm font-black uppercase text-slate-500" type="button" data-tab="career">Desenvolvimento Pessoal FIAP</button>
-      </nav>
-
-      <section class="tab-panel grid overflow-hidden border-2 border-slate-300 xl:grid-cols-[repeat(3,minmax(12rem,1fr))_minmax(13rem,0.8fr)]" id="kanban-panel" aria-label="Quadro Kanban">
+      <section class="grid overflow-hidden border-2 border-slate-300 xl:grid-cols-[repeat(3,minmax(12rem,1fr))_minmax(13rem,0.8fr)]" aria-label="Quadro Kanban">
         <div class="p-4 xl:p-5" data-column="todo">
           <h2 class="mb-5 text-center text-xl font-black uppercase text-fiap">To Do</h2>
           <div class="task-list grid min-h-[clamp(10rem,35vh,32rem)] content-start gap-3" id="todo" aria-label="Tarefas para fazer"></div>
@@ -105,64 +100,6 @@
             <label class="grid grid-cols-[22px_1fr] items-center gap-2 text-sm font-bold"><input type="checkbox" /> Confirmei o prazo</label>
           </section>
         </aside>
-      </section>
-
-      <section class="tab-panel hidden border-2 border-slate-300 p-[clamp(1rem,2vw,2rem)]" id="career-panel" aria-label="Progresso da carreira">
-        <div class="grid gap-6 xl:grid-cols-[minmax(18rem,0.9fr)_minmax(20rem,1.1fr)]">
-          <div>
-            <p class="mb-2 text-xs font-extrabold uppercase tracking-[0.12em] text-fiap">FIAP</p>
-            <h2 class="text-[clamp(1.8rem,4vw,3.25rem)] font-black uppercase leading-none">desenvolvimento-pessoal-fiap</h2>
-            <p class="mt-4 text-slate-600">Acompanhe evolucao academica, habilidades profissionais e proximas acoes para construir progresso de carreira durante a faculdade.</p>
-          </div>
-
-          <div class="grid gap-3 sm:grid-cols-3">
-            <article class="rounded-lg border border-slate-300 p-4">
-              <span class="text-3xl font-black text-fiap">1</span>
-              <h3 class="mt-2 font-black uppercase">Base</h3>
-              <p class="mt-1 text-sm text-slate-500">Organizar rotina, prazos e materias.</p>
-            </article>
-            <article class="rounded-lg border border-slate-300 p-4">
-              <span class="text-3xl font-black text-fiap">2</span>
-              <h3 class="mt-2 font-black uppercase">Pratica</h3>
-              <p class="mt-1 text-sm text-slate-500">Criar projetos, estudos e entregas.</p>
-            </article>
-            <article class="rounded-lg border border-slate-300 p-4">
-              <span class="text-3xl font-black text-fiap">3</span>
-              <h3 class="mt-2 font-black uppercase">Portfolio</h3>
-              <p class="mt-1 text-sm text-slate-500">Publicar trabalhos e acompanhar resultados.</p>
-            </article>
-          </div>
-        </div>
-
-        <div class="mt-8 grid gap-4 lg:grid-cols-2">
-          <section class="rounded-lg border border-slate-300 p-4">
-            <h3 class="text-lg font-black uppercase text-fiap">Progresso da carreira</h3>
-            <div class="mt-4 grid gap-4">
-              <label class="grid gap-2 text-sm font-bold text-slate-600">
-                Organizacao academica
-                <input class="w-full accent-fiap" type="range" min="0" max="100" value="70" />
-              </label>
-              <label class="grid gap-2 text-sm font-bold text-slate-600">
-                Projetos praticos
-                <input class="w-full accent-fiap" type="range" min="0" max="100" value="45" />
-              </label>
-              <label class="grid gap-2 text-sm font-bold text-slate-600">
-                Portfolio GitHub
-                <input class="w-full accent-fiap" type="range" min="0" max="100" value="35" />
-              </label>
-            </div>
-          </section>
-
-          <section class="rounded-lg border border-slate-300 p-4">
-            <h3 class="text-lg font-black uppercase text-fiap">Proximas acoes</h3>
-            <div class="mt-4 grid gap-3">
-              <label class="grid grid-cols-[22px_1fr] items-start gap-2 text-sm font-bold"><input type="checkbox" /> Subir este Kanban no GitHub.</label>
-              <label class="grid grid-cols-[22px_1fr] items-start gap-2 text-sm font-bold"><input type="checkbox" /> Atualizar README com objetivo do projeto.</label>
-              <label class="grid grid-cols-[22px_1fr] items-start gap-2 text-sm font-bold"><input type="checkbox" /> Registrar aprendizados de HTML, CSS, JavaScript e Tailwind.</label>
-              <label class="grid grid-cols-[22px_1fr] items-start gap-2 text-sm font-bold"><input type="checkbox" /> Separar evidencias para portfolio FIAP.</label>
-            </div>
-          </section>
-        </div>
       </section>
     </main>
 

@@ -41,14 +41,11 @@ const subjectInput = document.querySelector("#task-subject");
 const priorityInput = document.querySelector("#task-priority");
 const dueInput = document.querySelector("#task-due");
 const addButton = document.querySelector("#add-task");
-const tabButtons = document.querySelectorAll(".tab-button");
-const tabPanels = document.querySelectorAll(".tab-panel");
 
 goalInput.value = state.goal;
 blockersInput.value = state.blockers;
 
 renderTasks();
-setupTabs();
 
 goalInput.addEventListener("input", () => {
   state.goal = goalInput.value;
@@ -205,24 +202,4 @@ function loadState() {
 
 function saveState() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-}
-
-function setupTabs() {
-  tabButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const selectedTab = button.dataset.tab;
-
-      tabButtons.forEach((item) => {
-        const isActive = item.dataset.tab === selectedTab;
-        item.classList.toggle("border-fiap", isActive);
-        item.classList.toggle("text-fiap", isActive);
-        item.classList.toggle("border-transparent", !isActive);
-        item.classList.toggle("text-slate-500", !isActive);
-      });
-
-      tabPanels.forEach((panel) => {
-        panel.classList.toggle("hidden", panel.id !== `${selectedTab}-panel`);
-      });
-    });
-  });
 }
