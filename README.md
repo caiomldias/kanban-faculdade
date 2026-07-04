@@ -1,10 +1,10 @@
-# Kanban da Faculdade
+# Organizador Diário de Tarefas Kanban
 
 Projeto acadêmico desenvolvido para organizar tarefas da faculdade no dia a dia, com foco em priorização, acompanhamento de progresso e melhoria da rotina de estudos.
 
 ## Proposta
 
-O **Kanban da Faculdade** é uma aplicação web simples para transformar tarefas acadêmicas em um quadro visual de acompanhamento. A ideia é separar o que precisa ser feito, o que está em andamento, o que já foi concluído e quais impedimentos estão atrapalhando a evolução.
+O **Organizador Diário de Tarefas Kanban** é uma aplicação web simples para transformar tarefas acadêmicas em um quadro visual de acompanhamento. A ideia é separar o que precisa ser feito, o que está em andamento, o que já foi concluído e quais impedimentos estão atrapalhando a evolução.
 
 O projeto também conecta organização pessoal com desenvolvimento profissional, registrando uma aba específica de **Desenvolvimento Pessoal FIAP** para acompanhar evolução acadêmica, prática em projetos e construção de portfólio.
 
